@@ -6,7 +6,7 @@ function calcLogic() {
             var unos = item.innerHTML;
             var broj = document.getElementById("ekran").innerHTML;
 
-            if (Number(unos) >= 0) {
+            if (Number(unos) >= 0 || item.innerHTML == "+" || item.innerHTML == "-" || item.innerHTML == "/" || item.innerHTML == "*") {
                 var broj = document.getElementById("ekran").innerHTML = (String(broj) + String(unos));
             }
             else if (unos == "RESET") {
@@ -17,10 +17,6 @@ function calcLogic() {
                 var noviBroj = broj2.slice(0, -1);
                 document.getElementById("ekran").innerHTML = noviBroj;
                 var broj = noviBroj;
-            }
-            else if (item.innerHTML == "+" || item.innerHTML == "-" || item.innerHTML == "/" || item.innerHTML == "*") {
-                var broj2 = Number(document.getElementById("ekran").innerHTML);
-                var broj = document.getElementById("ekran").innerHTML = (String(broj) + String(unos));
             }
             else if (item.innerHTML == "=") {
                 var broj0 = document.getElementById("ekran").innerHTML;
