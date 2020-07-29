@@ -5,45 +5,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Demo site </title>
         <script src="scripts.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link href="style.css" rel="stylesheet">
     </head>
-    <body onload="calcLogic()">
-        <div class="digi">
-            <div class="displej">
-                <h1 id="ekran"></h1>
+    <body style="background-color: lightblue;">
+        <div class="container-fluid row main">
+
+            <div class="container col-4 submain">
+                <img src="calc1.png" alt="" style="width:300px;height:300px;" onclick="openCalc()"> 
+                <h1>Calculator</h1>
             </div>
-            <div class="tasteri">
-                <div class="operacije">
-                    <div class="znak"><p class="vrednost">+</p></div>
-                    <div class="znak"><p  class="vrednost">-</p></div>
-                    <div class="znak"><p  class="vrednost">*</p></div>
-                    <div class="znak"><p  class="vrednost">/</p></div>
-                </div>
-                <div class="tasteri2">
-                    <div class="znak2 reset"><p class="vrednost">RESET</p></div>
-                    <div class="znak2 brisanje"><p class="vrednost">C</p></div>
-                </div>
-                <div class="brojke1">
-                    <div class="broj1"><p class="vrednost">9</p></div>
-                    <div class="broj1"><p class="vrednost">8</p></div>
-                    <div class="broj1"><p class="vrednost">7</p></div>
-                </div>
-                <div class="brojke1">
-                    <div class="broj1"><p class="vrednost">6</p></div>
-                    <div class="broj1"><p class="vrednost">5</p></div>
-                    <div class="broj1"><p class="vrednost">4</p></div>
-                </div>
-                <div class="brojke1">
-                    <div class="broj1"><p class="vrednost">3</p></div>
-                    <div class="broj1"><p class="vrednost">2</p></div>
-                    <div class="broj1 broj2"><p class="vrednost">=</p></div>
-                </div>
-                <div class="brojke1">
-                    <div class="broj1"><p class="vrednost">1</p></div>
-                    <div class="broj1"><p class="vrednost">0</p></div> 
-                    <div class="broj1" style="visibility: hidden;"><p></p></div>                
-                </div>
-            </div>   
+            <div class="container col-4 submain">
+                <img src="curconv.jpg" alt="" style="width:300px;height:300px;" onclick="">
+                <h1>Currency converter </h1>
+            </div>
+            <div class="container col-4 submain">
+                <img src="wfcast.jpg" alt="" style="width:300px;height:300px;" onclick="">
+                <h1>Weather forecast</h1> 
+            </div>
+            
+            
+            
+
+
         </div>
+
     </body>
+
 </html>

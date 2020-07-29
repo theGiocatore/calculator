@@ -6,7 +6,7 @@ function calcLogic() {
             var unos = item.innerHTML;
             var broj = document.getElementById("ekran").innerHTML;
 
-            if (Number(unos) >= 0 || item.innerHTML == "+" || item.innerHTML == "-" || item.innerHTML == "/" || item.innerHTML == "*") {
+            if (Number(unos) >= 0 || item.innerHTML == "+" || item.innerHTML == "-" || item.innerHTML == "/" || item.innerHTML == "*" || item.innerHTML == ".") {
                 var broj = document.getElementById("ekran").innerHTML = (String(broj) + String(unos));
             }
             else if (unos == "RESET") {
@@ -25,5 +25,12 @@ function calcLogic() {
             }
         });
     })
+
+}
+
+function openCalc(){
+
+    let param = "height= 370,width= 380, left=600,top=200";
+    window.open("calculator.html", "calculator" , param);
 
 }
